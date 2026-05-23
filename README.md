@@ -10,7 +10,12 @@
 
 | 檔案 | 說明 |
 |------|------|
-| 📖 [09-Claude專屬懶人包-macOS版.md](./09-Claude專屬懶人包-macOS版.md) | **核心指南主檔**：完整的服務連接步驟、SOP 設定、常見問題排解 |
+| 📖 [09-Claude專屬懶人包-macOS版.md](./09-Claude專屬懶人包-macOS版.md) | **核心指南主檔**：完整的服務連接步驟、SOP 設定、常見問題排解（337 行）|
+| 🚀 [CLAUDE.md](./CLAUDE.md) | **專案駕駛艙範本**：Claude Code 自動讀取，含開工/收工/專案初始化 SOP |
+| 📊 [ai_educational_agents_trends.md](./ai_educational_agents_trends.md) | **AI 教育代理人趨勢報告**：Claude 實戰產出範例，涵蓋個人化學習、心理健康預警等 |
+| 🎨 [ai_educational_agents_infographic_zh.html](./ai_educational_agents_infographic_zh.html) | **繁體中文資訊圖表**：Claude 原生生成的 SVG/HTML 視覺化圖表 |
+| 🛡️ [.gitignore](./.gitignore) | **版本控制忽略規則**：macOS + Node.js + Python + Firebase + Claude Code |
+| 📝 [README.md](./README.md) | 本說明文件 |
 
 ---
 
@@ -29,11 +34,12 @@
 ### 第二部分：繁體中文 AI 生圖
 - claude.ai 網頁版直接生圖（免 API Key）
 - Claude Code 生成互動式 React/HTML 圖表
+- 實戰範例：[ai_educational_agents_infographic_zh.html](./ai_educational_agents_infographic_zh.html)
 
 ### 第三部分：CLAUDE.md 專案駕駛艙
 - 原版 `ANTIGRAVITY.md` 的 Claude 對應版本
 - Claude Code **自動讀取**專案根目錄的 `CLAUDE.md`
-- 包含開工 / 收工 / 專案初始化 三套完整 SOP
+- 包含開工 / 收工 / 專案初始化三套完整 SOP
 
 ---
 
@@ -47,7 +53,7 @@ npm install -g @anthropic-ai/claude-code
 claude
 
 # 3. 在專案目錄建立駕駛艙
-touch ~/Projects/CLAUDE.md
+cp CLAUDE.md ~/Projects/your-project/CLAUDE.md
 
 # 4. 環境一鍵驗證
 echo "Python: $(python3 --version)" && \
@@ -91,7 +97,7 @@ echo "Claude Code: $(claude --version 2>/dev/null || echo '請安裝')"
 
 - 原版懶人包：[mathruffian-dot/antigravity-lazy-pack](https://github.com/mathruffian-dot/antigravity-lazy-pack)
 - macOS 調適版：[GmiiLiao/antigravity-lazy-pack-macos](https://github.com/GmiiLiao/antigravity-lazy-pack-macos)
-- Claude 版改編：本 repo
+- Claude 版改編：本 repo（由 Claude + Claude in Chrome 協作完成）
 
 ---
 
